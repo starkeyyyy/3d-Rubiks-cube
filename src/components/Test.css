@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Varela+Round&display=swap');
+
+.move{
+  font-family: Orbitron;
+  font-size: 25px;
+  margin-top: 5px;
+}
+.layer {
+  position: absolute;
+  z-index: -1;
+  top: 10px;
+  left: 10px;
+  font-size: 25px;
+  color: white; /* Your preferred text color */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Optional: Semi-transparent background */
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.layer:nth-child(1) {
+  top: 50px;
+  left: 10px;
+}
+
+.layer:nth-child(2) {
+  top: 90px;
+  left: 10px;
+}
+
+.layer:nth-child(3) {
+  top: 130px;
+  left: 10px;
+}
+
+.layer:nth-child(4) {
+  top: 170px;
+  left: 10px;
+}
+
+.layer:nth-child(5) {
+  top: 210px;
+  left: 10px;
+}
+
+
+.moves-list{
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  top: 20px;
+  right: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  max-height: 90%;
+  color: white; /* Your preferred text color */
+ backdrop-filter: blur(10px);
+ border: 5px solid black;
+ background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+.moves-list::-webkit-scrollbar {
+  width: 8px;
+}
+.moves-list::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+
+body {
+  background: linear-gradient(135deg, #1a1a1a, #515151, #999898);
+  height: 100vh;
+  margin: 0;
+}
+
+
+
+/* CSS */
+.button-52 {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  top:80%;
+  left: 50%;
+  transform: translate(-50%);
+  color: #000;
+
+}
+
+.button-52:after {
+  content: "";
+  background-color: #ffe54c;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
+
+
+
+
+
+
+.cube-layout{
+  position:absolute;
+  top: 300px;
+  left: 10px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  border-radius: 50px; /* Optional: adds rounded corners */
+  padding: 20px;
+  border: 5px solid black;
+  
+}
+
+
